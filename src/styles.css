@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #282c34;
+  color: white;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.content-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+button {
+  margin-left: 1rem;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
