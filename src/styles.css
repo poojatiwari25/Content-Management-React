@@ -1,32 +1,153 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-family: cursive;
+  background-color: #282a2c; 
+  color: #121212; 
 }
 
 .navbar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  background-color: #282c34;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #161718; 
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+}
+
+.navbar h1 {
+  font-size: 24px;
+  margin: 0;
   color: white;
 }
 
-.container {
-  padding: 2rem;
+.navbar div {
+  display: flex;
 }
 
-.content-card {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  margin: 1rem 0;
-}
-
-button {
-  margin-left: 1rem;
-  background-color: red;
+.navbar a {
+  text-decoration: none;
   color: white;
-  border: none;
-  padding: 0.5rem;
+  font-size: 19px;
+  margin-right: 45px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffd700; 
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 60px; 
+  box-sizing: border-box;
+}
+
+form {
+  width: 100%;
+  max-width: 450px; 
+  padding: 30px; 
+  background-color: #ffffff; 
+  border-radius: 10px; 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7); 
+  border: 1px solid #333; 
+  text-align: left;
+  position: relative;
+}
+
+form h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #121212; 
+  text-align: center;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  font-size: 18px; 
+  color: #333333; 
+  margin-bottom: 8px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 14px; 
+  font-size: 16px;
+  color: #121212; 
+  background-color: #f9f9f9; 
+  border: 1px solid #ccc; 
+  border-radius: 6px; 
+  box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #161718; 
+  outline: none; 
+  background-color: #ffffff; 
+}
+
+
+form textarea {
+  resize: vertical; 
+  min-height: 120px; 
+}
+
+form button {
+  width: 100%;
+  padding: 14px; 
+  font-size: 18px; 
+  font-weight: bold; 
+  color: #ffffff; 
+  background-color: #40484e; 
+  border: none; 
+  border-radius: 6px; 
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+form button:hover {
+  background-color: #161718; 
+  transform: translateY(-2px); 
+}
+
+form button:active {
+  background-color: #40484e; 
+  transform: translateY(0); 
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 90%; 
+    padding: 20px; 
+  }
+
+  form h2 {
+    font-size: 24px; 
+  }
+
+  form label,
+  form input,
+  form textarea {
+    font-size: 14px;
+  }
+
+  form button {
+    font-size: 16px; 
+  }
 }

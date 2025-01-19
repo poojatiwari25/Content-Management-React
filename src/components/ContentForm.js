@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { createContent, updateContent, getContents } from "../services/api";
-import './ContentForm.css';
 
 function ContentForm() {
   const [title, setTitle] = useState("");
@@ -35,6 +34,7 @@ function ContentForm() {
   };
 
   return (
+    <div className="form-container">
     <form onSubmit={handleSubmit}>
       <h2>{id ? "Edit Content" : "Add Content"}</h2>
       <div>
@@ -47,6 +47,7 @@ function ContentForm() {
       </div>
       <button type="submit">{id ? "Update" : "Create"}</button>
     </form>
+    </div>
   );
 }
 

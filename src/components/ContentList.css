@@ -1,0 +1,69 @@
+.content-list-container {
+  margin: 100px auto 20px;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.content-list-container h2 {
+  font-size: 28px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.content-card {
+  background-color: #ffffff; 
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.content-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #000000; 
+}
+
+.content-card p {
+  font-size: 16px;
+  color: #555555;
+}
+
+.content-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.action-button {
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-button.edit {
+  background-color: #40484e;
+  color: white;
+  border: none;
+}
+
+.action-button.edit:hover {
+  background-color: #161718;
+}
+
+.action-button.delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.action-button.delete:hover {
+  background-color: #a71d2a;
+}
